@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    margin: 0 1rem;
+}
+
+
+
+.header {
+    background-image: url("product.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    padding: 2rem;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Belleza', sans-serif;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color: #4E5269;
+}
+
+.header p {
+    font-family: 'Belleza', sans-serif;
+    width: 70%;
+}
+
+.icone {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.icona {
+    margin: 2rem 0;
+}
+
+/*NAV*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+    background-color: #EAB6AB;
+}
+
+.hideMenu {
+    display: none;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+#menu a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 0.3rem;
+}
+
+#menu a:hover {
+    background-color: #4E5269;
+    color: white;
+}
+
+#menu li {
+    list-style: none;
+    margin: 0.75rem;
+}
+
+.hamburger {
+    border: none;
+    background-color: #EAB6AB;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/*FINE NAV*/
+
+.btn {
+    text-transform: uppercase;
+    padding: 0.5rem;
+    width: 10rem;
+    border: 1px solid #4E5269;
+    border-radius: 5px;
+    background-color: #4E5269;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #8e96c8;
+    color: black;
+
+}
+
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+textarea {
+    height: 5rem;
+}
+
+footer {
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: #EAB6AB;
+    width: 100%;
+}
+
+h4 {
+    margin-bottom: 0.5rem;
+}
+
+/*MEDIA QUERY*/
+
+@media only screen and (min-width: 500px) {
+    .hamburger {
+        display: none;
+    }
+
+    #menu {
+        position: relative;
+        width: initial;
+    }
+
+    .hideMenu {
+        display: inline;
+    }
+
+    #menu li,
+    #menu a {
+        display: inline;
+    }
+
+    @media only screen and (min-width: 700px) {
+
+        .contenuto {
+            margin: 0 5rem;
+        }
+
+        .header {
+            background-image: url("product.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 50vh;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        h1 {
+            margin-top: 5rem;
+        }
+
+        .header p {
+            width: 30%;
+        }
+
+        .icone {
+            width: 100%;
+            margin: 3rem auto 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .icona {
+            width: 30%;
+        }
+
+        h3 {
+            margin-top: 3rem;
+        }
+
+        .input_field {
+            margin-top: 1rem;
+            width: 50%;
+        }
+
+        textarea {
+            width: 50%;
+            height: 10rem;
+        }
+
+    }
+}

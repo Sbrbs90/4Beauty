@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <span class="logo">4Beauty</span>
+        <button class="hamburger" onclick="toggleMenu()">&#8801</button>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chi Siamo</a></li>
+            <li><a href="#">Promozioni</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="header">
+            <h1>New Creamy!</h1>
+            <p>Solo per il mese di Giugno avrai la possibilità di provare gratuitamente la nostra nuova crema anti
+                invecchiamento</p>
+        </div>
+        <section class="contenuto">
+            <section class="icone">
+                <div class="icona">
+                    <img src="present.svg" alt="icona di un pacco regalo">
+                    <p>Vogliamo premiare la tua fedeltà accompagnandoti con piccoli step a prenderti cura di te stessa
+                        in
+                        modo più consapevole ad ogni stagione!</p>
+                </div>
+
+                <div class="icona">
+                    <img src="trust.svg" alt="icona di fiducia">
+                    <p>Vogliamo farti vivere un'esperienza memorabile sin dal primo rituale e soprattutto quando, anno
+                        dopo
+                        anno, deciderai di rinnovare la fiducia in noi!</p>
+                </div>
+
+                <div class="icona">
+                    <img src="happy.svg" alt="icona felice">
+                    <p>Il nostro impegno è renderti felice! Il tuo feedback è fondamentale affinché tu ci possa aiutare
+                        a
+                        crescere. </p>
+                </div>
+            </section>
+
+            <section class="form">
+                <h3>Prenota ora una prova gratuita!</h3>
+
+                <div class="input_field">
+                    <label for="first_name">Nome</label><br>
+                    <input id="first_name" type="text" name="fname" placeholder="Nome">
+
+                    <label for="email"> Email </label><br>
+                    <input id="email" type="email" name="email" placeholder="mario.rossi@yahoo.com">
+                </div>
+
+                <label for="message"> Messaggio </label><br>
+                <textarea id="message" name="message" placeholder="Messaggio..."></textarea>
+
+                <button id="myButton" class="btn" type="submit">Invia</button>
+
+            </section>
+        </section>
+        <footer>
+            <h4>Seguici sui social:</h4>
+            <div class="social">
+                <a href="#"><img src="Facebook.png" alt="icona di facebook"></a>
+                <a href="#"><img src="Instagram.png" alt="icona di instagram"></a>
+            </div>
+        </footer>
+    </main>
+</body>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        if (menu.classList.contains("hideMenu")) {
+            menu.classList.remove("hideMenu");
+        } else {
+            menu.classList.add("hideMenu");
+        }
+    }
+</script>
+
+</html>
